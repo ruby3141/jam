@@ -4,7 +4,7 @@
 출처: https://stackoverflow.com/questions/4469115/typed-dataset-not-using-typedtablebase-in-net-4
 
 `MSDataSetGenerator`이 돌아갈 때 `System.Data.DataSetExtensions`이 VS에 로드가 안 되어 있으면 \
-`TypedTableBase<>` 대신 `DataTable`이랑 `IEnumerable`을 써서 `OfType<>()` 없이 LINQ가 안 된다.
+코드 제너레이터가 `TypedTableBase<>` 대신 `DataTable`이랑 `IEnumerable`을 써서 `OfType<>()` 없이 LINQ가 안 된다.
 
 간단하게 VS에서 xsd 파일을 더블클릭해 테이블 디자이너를 켜서 `System.Data.DataSetExtensions`를 로드한 뒤, \
 xsd 파일을 우클릭하고 "사용자 지정 도구 실행" 하면 된다.
